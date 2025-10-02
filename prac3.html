@@ -1,0 +1,19 @@
+// C++ code
+//
+#include<LiquidCrystal.h>
+char mytext1[]="KK";
+char mytext2[]="Hello World";
+LiquidCrystal lcd(7,6,5,4,3,2);
+void setup()
+{
+  lcd.begin(16,2);
+  lcd.setCursor(0,0);
+  lcd.print(mytext1);
+  lcd.setCursor(0,1);
+  lcd.print(mytext2);
+}
+
+void loop()
+{
+  
+}

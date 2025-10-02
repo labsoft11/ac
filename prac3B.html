@@ -1,0 +1,33 @@
+// C++ code
+//
+#include<LiquidCrystal.h>
+LiquidCrystal lcd(12,11,5,4,3,2);
+void setup()
+{
+  lcd.begin(16,2);
+  lcd.print("KK");
+  delay(1000);
+}
+
+void loop()
+{
+  for (int pc=0;pc<13;pc++)
+  {
+    lcd.scrollDisplayLeft();
+    delay(150);
+  }
+  
+  for (int pc=0;pc<29;pc++)
+  {
+    lcd.scrollDisplayRight();
+    delay(150);
+  }
+  
+  for (int pc=0;pc<16;pc++)
+  {
+    lcd.scrollDisplayLeft();
+    delay(150);
+  }
+  delay(1000);
+  
+}
